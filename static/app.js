@@ -66,11 +66,14 @@ class AuraApp {
         document.getElementById('processBtn')
             .addEventListener('click', () => this._processLecture());
 
+<<<<<<< HEAD
         // Result tab switching
         document.querySelectorAll('.result-tab-btn').forEach(btn =>
             btn.addEventListener('click', () => this._switchResultTab(btn.dataset.target))
         );
 
+=======
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
         // Summary language toggle
         document.getElementById('toggleLangBtn')
             .addEventListener('click', () => this._toggleSummaryLang());
@@ -142,6 +145,10 @@ class AuraApp {
 
         this._hide('transcriptSection');
         this._hide('resultsSection');
+<<<<<<< HEAD
+=======
+        this._hide('chatSection');
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
 
         try {
             if (this.activeTab === 'upload') {
@@ -179,7 +186,11 @@ class AuraApp {
             }
 
             this._show('resultsSection');
+<<<<<<< HEAD
             this._switchResultTab('panelSummary');
+=======
+            this._show('chatSection');
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
 
         } catch (err) {
             this._showLoading('حدث خطأ: ' + err.message);
@@ -453,6 +464,7 @@ class AuraApp {
         box.scrollTop = box.scrollHeight;
     }
 
+<<<<<<< HEAD
     // ── Result tab switching (display only — no fetch/logic touched) ─────────
     _switchResultTab(targetId) {
         const panels = ['panelSummary', 'panelConcepts', 'panelQuiz', 'panelChat'];
@@ -465,6 +477,8 @@ class AuraApp {
         );
     }
 
+=======
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
     // ── Helpers ──────────────────────────────────────────────────────────────
     _show(id) { document.getElementById(id).classList.remove('hidden'); }
     _hide(id) { document.getElementById(id).classList.add('hidden'); }

@@ -118,6 +118,7 @@
             <div id="transcriptText" class="transcript-box"></div>
         </section>
 
+<<<<<<< HEAD
         <!-- ── Results (tab bar + panels) ───────────────────────── -->
         <section id="resultsSection" class="hidden">
 
@@ -208,6 +209,73 @@
                 </section>
             </div>
 
+=======
+        <!-- ── Results Grid ───────────────────────────────────── -->
+        <section id="resultsSection" class="results-grid hidden">
+
+            <!-- Summary Card -->
+            <div class="result-card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-book-open"></i>
+                        <h3>الملخص</h3>
+                    </div>
+                    <button id="toggleLangBtn" class="lang-toggle-btn" type="button">
+                        <i class="fas fa-language"></i>
+                        <span>اعرض بالعربي</span>
+                    </button>
+                </div>
+                <div id="summaryContent" class="card-body"></div>
+            </div>
+
+            <!-- Concepts Card -->
+            <div class="result-card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>المفاهيم الأساسية</h3>
+                    </div>
+                </div>
+                <div id="conceptsContent" class="card-body"></div>
+            </div>
+
+            <!-- Quiz Card (full width) -->
+            <div class="result-card quiz-card-full">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-circle-question"></i>
+                        <h3>اختبر نفسك</h3>
+                    </div>
+                    <span id="quizScore" class="meta-label"></span>
+                </div>
+                <div id="quizContent" class="card-body"></div>
+            </div>
+        </section>
+
+        <!-- ── Chat Section ───────────────────────────────────── -->
+        <section id="chatSection" class="section-card hidden">
+            <div class="section-title">
+                <i class="fas fa-comments"></i>
+                <h2>اسأل عن المحاضرة</h2>
+                <span class="meta-label" style="margin-left:auto">الإجابات مقيّدة بنص المحاضرة فقط</span>
+            </div>
+            <div id="chatMessages" class="chat-messages">
+                <div class="chat-bubble ai-bubble">
+                    <div class="bubble-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="bubble-text">
+                        مرحباً! يمكنني الإجابة على أسئلتك عن هذه المحاضرة. اسألني أي شيء.
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-row">
+                <input type="text" id="chatInput"
+                    placeholder="اكتب سؤالك عن المحاضرة…"
+                    autocomplete="off">
+                <button id="chatSendBtn" class="send-btn" type="button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
         </section>
 
     </main>

@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 .venv
 .env
 __pycache__
 *.pyc
+=======
+.env
+__pycache__/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569

@@ -601,6 +601,7 @@ textarea::placeholder { color: var(--text-muted); }
 @keyframes spin    { to { transform: rotate(360deg); } }
 @keyframes fillBar { to { width: 100%; } }
 
+<<<<<<< HEAD
 /* ── Result Tabs ───────────────────────────────────────────── */
 .result-tabs-bar {
     display: flex; gap: 4px;
@@ -634,6 +635,8 @@ textarea::placeholder { color: var(--text-muted); }
 
 .result-panel { animation: fadeInUp 0.25s ease; }
 
+=======
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 620px) {
     .app-header   { padding: 12px 16px; }
@@ -643,6 +646,9 @@ textarea::placeholder { color: var(--text-muted); }
     .results-grid { grid-template-columns: 1fr; }
     .quiz-card-full { grid-column: 1; }
     .bubble-text  { max-width: 88%; }
+<<<<<<< HEAD
     .result-tab-btn span { display: none; }
     .result-tab-btn { padding: 11px 8px; }
+=======
+>>>>>>> 616be73d466afbcdf5ec0fc9fd26d3692fc3b569
 }
